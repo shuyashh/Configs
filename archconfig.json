@@ -1,0 +1,105 @@
+{
+  "additional-repositories": [],
+  "archinstall-language": "English",
+  "audio_config": null,
+  "bootloader": "Grub",
+  "bootloader_config": {
+    "bootloader": "Grub",
+    "install_to_disk": true
+  },
+  "debug": false,
+  "disk_config": {
+    "config_type": "manual_partitioning",
+    "device_modifications": [
+      {
+        "device": "/dev/sda",
+        "partitions": [
+          {
+            "btrfs": [],
+            "flags": ["boot"],
+            "fs_type": "fat32",
+            "length": {
+              "unit": "MB",
+              "value": 512
+            },
+            "mount_options": [],
+            "mountpoint": "/boot",
+            "status": "create",
+            "type": "primary"
+          },
+          {
+            "btrfs": [],
+            "flags": [],
+            "fs_type": "ext4",
+            "length": {
+              "unit": "B",
+              "value": null
+            },
+            "mount_options": [],
+            "mountpoint": "/",
+            "status": "create",
+            "type": "primary"
+          }
+        ],
+        "wipe": false
+      }
+    ] 
+  },
+  "disk_encryption": {
+    "encryption_type": "luks",
+    "partitions": [
+      "root"
+    ]
+  },
+  "hostname": "Shuyy",
+  "kernels": [
+    "linux"
+  ],
+  "locale_config": {
+    "kb_layout": "us",
+    "sys_enc": "UTF-8",
+    "sys_lang": "en_US"
+  },
+  "mirror_config": {
+    "mirror_regions": {
+      "United States": [
+        "https://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch",
+        "https://mirror.rackspace.com/archlinux/$repo/os/$arch"
+        ]
+      },
+    "optional_repositories": [
+      "testing"
+    ],
+    "custom_repositories": []
+  },
+  "network_config": {},
+  "no_pkg_lookups": false,
+  "ntp": true,
+  "offline": false,
+"packages": [
+    "hyprland",
+    "wayland",
+    "wlroots",
+    "swaylock",
+    "waybar",
+    "xorg-xwayland",
+    "xdg-desktop-portal",
+    "kitty",
+    "base-devel",
+    "gcc",
+    "clang",
+    "cmake",
+    "gdb",
+    "valgrind",
+    "git",
+    "firefox"
+],
+  "parallel downloads": 5,
+  "profile_config": null,
+  "save_config": null,
+  "script": "guided",
+  "silent": false,
+  "swap": true,
+  "timezone": "America/Chicago",
+  "version": "2.6.0"
+}
