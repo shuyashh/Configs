@@ -81,12 +81,7 @@
             }
         ]
   },
-  "disk_encryption": {
-    "encryption_type": "luks",
-    "partitions": [
-      "3e75d045-21a4-429d-897e-8ec19a006e8b"
-    ]
-  },
+  "disk_encryption": null,
   "hostname": "Shuyy",
   "kernels": [
     "linux"
