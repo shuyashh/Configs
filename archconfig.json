@@ -8,6 +8,14 @@
     "install_to_disk": true
   },
   "debug": false,
+  "root_password": "rtpswd",
+  "users": [{
+    "username": "usr1",
+    "password": "usr",
+    "sudo": true
+  }
+
+  ],
   "disk_config": {
     "config_type": "manual_partitioning",
     "device_modifications": [
