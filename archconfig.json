@@ -11,39 +11,61 @@
   "disk_config": {
     "config_type": "manual_partitioning",
     "device_modifications": [
-      {
-        "device": "/dev/sda",
-        "partitions": [
-          {
-            "btrfs": [],
-            "flags": ["boot"],
-            "fs_type": "fat32",
-            "length": {
-              "unit": "MB",
-              "value": 512
+            {
+                "btrfs": [],
+                "flags": ["boot"],
+                "fs_type": "fat32",
+                "length": {
+                    "sector_size": null,
+                    "total_size": null,
+                    "unit": "B",
+                    "value": 536870912
+                },
+                "mount_options": [],
+                "mountpoint": "/boot",
+                "obj_id": "auto-generated-uuid-boot",
+                "start": {
+                "sector_size": {
+                    "sector_size": null,
+                    "total_size": null,
+                    "unit": "B",
+                    "value": 512
+                },
+                "total_size": null,
+                "unit": "sectors",
+                "value": 2048
+                },
+                "status": "create",
+                "type": "primary"
             },
-            "mount_options": [],
-            "mountpoint": "/boot",
-            "status": "create",
-            "type": "primary"
-          },
-          {
-            "btrfs": [],
-            "flags": [],
-            "fs_type": "ext4",
-            "length": {
-              "unit": "B",
-              "value": null
-            },
-            "mount_options": [],
-            "mountpoint": "/",
-            "status": "create",
-            "type": "primary"
-          }
-        ],
-        "wipe": false
-      }
-    ] 
+            {
+                "btrfs": [],
+                "flags": [],
+                "fs_type": "ext4",
+                "length": {
+                    "sector_size": null,
+                    "total_size": null,
+                    "unit": "B",
+                    "value": null
+                },
+                "mount_options": [],
+                "mountpoint": "/",
+                "obj_id": "auto-generated-uuid-root",
+                "start": {
+                "sector_size": {
+                    "sector_size": null,
+                    "total_size": null,
+                    "unit": "B",
+                    "value": null
+                },
+                "total_size": null,
+                "unit": "sectors",
+                "value": null
+                },
+                "status": "create",
+                "type": "primary"
+            }
+            ]
   },
   "disk_encryption": {
     "encryption_type": "luks",
