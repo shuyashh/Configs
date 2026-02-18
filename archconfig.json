@@ -13,17 +13,19 @@
     "device_modifications": [
             {
                 "btrfs": [],
-                "flags": ["boot"],
+                "flags": [
+                "boot"
+                ],
                 "fs_type": "fat32",
                 "length": {
-                    "sector_size": null,
-                    "total_size": null,
-                    "unit": "B",
-                    "value": 536870912
+                "sector_size": null,
+                "total_size": null,
+                "unit": "B",
+                "value": 537870912
                 },
                 "mount_options": [],
                 "mountpoint": "/boot",
-                "obj_id": "auto-generated-uuid-boot",
+                "obj_id": "369f31a8-2781-4d6b-96e7-75680552b7c9",
                 "start": {
                 "sector_size": {
                     "sector_size": null,
@@ -33,44 +35,49 @@
                 },
                 "total_size": null,
                 "unit": "sectors",
-                "value": 2048
+                "value": 34
                 },
                 "status": "create",
                 "type": "primary"
             },
             {
-                "btrfs": [],
-                "flags": [],
-                "fs_type": "ext4",
-                "length": {
-                    "sector_size": null,
-                    "total_size": null,
-                    "unit": "B",
-                    "value": null
-                },
-                "mount_options": [],
-                "mountpoint": "/",
-                "obj_id": "auto-generated-uuid-root",
-                "start": {
+            "btrfs": [],
+            "flags": [],
+            "fs_type": "ext4",
+            "length": {
+                "sector_size": null,
+                "total_size": null,
+                "unit": "B",
+                "value": 107374182400
+            },
+            "mount_options": [],
+            "mountpoint": "/",
+            "obj_id": "3e75d045-21a4-429d-897e-8ec19a006e8b",
+            "start": {
                 "sector_size": {
                     "sector_size": null,
                     "total_size": null,
                     "unit": "B",
-                    "value": null
+                    "value": 512
                 },
-                "total_size": null,
-                "unit": "sectors",
-                "value": null
+                "total_size": {
+                    "sector_size": null,
+                    "total_size": null,
+                    "unit": "B",
+                    "value": 16106127360
                 },
-                "status": "create",
-                "type": "primary"
+                "unit": "MB",
+                "value": 301
+            },
+            "status": "create",
+            "type": "primary"
             }
-            ]
+        ]
   },
   "disk_encryption": {
     "encryption_type": "luks",
     "partitions": [
-      "root"
+      "3e75d045-21a4-429d-897e-8ec19a006e8b"
     ]
   },
   "hostname": "Shuyy",
