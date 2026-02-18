@@ -14,7 +14,6 @@
     "password": "usr",
     "sudo": true
   }
-
   ],
   "disk_config": {
     "config_type": "manual_partitioning",
